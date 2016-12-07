@@ -35,9 +35,7 @@ class App extends React.Component {
             return this.simulate();
         }).then(() => {
             return this.state.toast.close();
-        }).catch((e) => {
-            console.log(e)
-        });
+        })
     }
 
     render() {

@@ -51,7 +51,7 @@ class ShToast extends React.Component {
                 <div className={"sh-toast-content"}>
                     <i id="sh-icons" className={"sh-toast-icon sh-icon " + this.props.shIcon}/>
                     <div id="sh-title" className="sh-toast-title">{this.props.shToastTitle}</div>
-                    <div is="sh-body" className="sh-toast-body">
+                    <div id="sh-body" className="sh-toast-body">
                         {this.props.shToastNotice}
                     </div>
                 </div>

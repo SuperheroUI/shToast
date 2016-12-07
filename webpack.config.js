@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
     entry: {
-        'sh-modal-service': './src/sh-toast-service.js',
+        'sh-toast-service': './src/sh-toast-service.js',
     },
     output: {
         path: './bin',
