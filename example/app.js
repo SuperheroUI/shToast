@@ -17,7 +17,7 @@ class App extends React.Component {
 
     componentDidMount() {
         this.setState({
-            toast: new ShToast('Your content has been saved and is now available to be seen on the interwebbs, how does that make you feel?', 'success', 'icon-envelope', 100,'custom')
+            toast: new ShToast('Your content has been saved and is now available to be seen on the interwebbs, how does that make you feel?', 'success', 'icon-envelope', 1000000,'from-top')
         })
     }
 

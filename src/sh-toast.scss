@@ -19,6 +19,17 @@
         transition: bottom $transition;
     }
 
+    &.from-top{
+        border-radius: 0 0 4px 4px;
+        bottom: initial;
+        top: -70px;
+
+        &.fade-in {
+            top: 0;
+            transition: top $transition;
+        }
+    }
+
     .sh-toast-content {
         height: 70px;
         left: 0;
@@ -32,7 +43,7 @@
             line-height: 70px;
             top: 20px;
             font-size: $size-font6;
-            color: $color-primary;;
+            color: $color-primary;
         }
 
         .sh-toast-title {
