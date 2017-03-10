@@ -30,6 +30,24 @@
         }
     }
 
+    &.right {
+        right: 10px;
+        left: calc(100% - 440px);
+
+        .sh-toast-content {
+            padding: 0 15px;
+
+            .sh-toast-title {
+                margin-right: 0;
+                width: 80px;
+            }
+
+            .sh-toast-body {
+                font-size: 14px;
+            }
+        }
+    }
+
     .sh-toast-content {
         height: 70px;
         left: 0;
