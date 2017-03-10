@@ -19,7 +19,7 @@
         transition: bottom $transition;
     }
 
-    &.from-top{
+    &.from-top {
         border-radius: 0 0 4px 4px;
         bottom: initial;
         top: -70px;
@@ -30,9 +30,17 @@
         }
     }
 
+    &.error {
+        .sh-toast-content {
+            .sh-toast-icon {
+                color: $color-error;
+            }
+        }
+    }
+
     &.right {
         right: 10px;
-        left: calc(100% - 440px);
+        left: calc(100% - 430px);
 
         .sh-toast-content {
             padding: 0 15px;
@@ -44,6 +52,7 @@
 
             .sh-toast-body {
                 font-size: 14px;
+                line-height: 71px;
             }
         }
     }
