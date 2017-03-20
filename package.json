@@ -1,6 +1,6 @@
 {
   "name": "sh-toast",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "React toast notification",
   "main": "./bin/sh-toast-service.js",
   "scripts": {
@@ -49,10 +49,12 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1"
   },
+  "peerDependencies": {
+    "react": ">=15.3.0",
+    "react-dom": ">=15.3.0"
+  },
   "dependencies": {
     "lodash": "4.14.1",
-    "react": "15.3.0",
-    "react-dom": "15.3.0",
     "sh-buttons": "0.2.1",
     "sh-core": "0.3.1",
     "sh-icons": "^0.3.6"
