@@ -44,6 +44,7 @@
 
         .sh-toast-content {
             padding: 0 15px;
+            align-items: center;
 
             .sh-toast-title {
                 margin-right: 0;
@@ -52,7 +53,10 @@
 
             .sh-toast-body {
                 font-size: 14px;
-                line-height: 71px;
+                line-height: normal;
+                text-overflow: initial;
+                overflow: initial;
+                white-space: initial;
             }
         }
     }
