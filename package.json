@@ -57,6 +57,6 @@
     "lodash": "4.14.1",
     "sh-buttons": "0.2.1",
     "sh-core": "0.3.1",
-    "sh-icons": "^0.3.6"
+    "sh-icons": "^0.4.2"
   }
 }
