@@ -1,11 +1,16 @@
-var path = require('path');
+const path = require('path');
+const webpack = require("webpack");
+const sass = require("node-sass");
+const sassUtils = require("node-sass-utils")(sass);
+const { sassOverriderByTheme } = require('./node_modules/insidesales-components/lib/sassConfiguration.js');
+const theme = require('./node_modules/insidesales-components/lib/styles/themes.js').blueYellowTheme;
 
 module.exports = {
     entry: {
         'sh-toast-service': './src/sh-toast-service.js',
     },
     output: {
-        path: './bin',
+        path: path.join(__dirname, 'bin'),
         filename: '[name].js',
         library: '[name]',
         libraryTarget: 'umd'
@@ -37,7 +42,7 @@ module.exports = {
         }
     ],
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
@@ -49,7 +54,18 @@ module.exports = {
             },
             {
                 test: /\.s?css$/,
-                loaders: ['style', 'css', 'sass']
+                use: [
+                  {
+                    loader: "style-loader"
+                  },
+                  {
+                    loader: "css-loader"
+                  },
+                  {
+                    loader: "sass-loader",
+                    options: sassOverriderByTheme({ theme, sassUtils, sass })
+                  },
+                ]
             },
             {
                 test: /\.(ttf|eot|svg|woff)$/,
