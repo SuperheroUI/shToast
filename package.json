@@ -43,7 +43,7 @@
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.1",
     "karma-webpack": "^1.8.0",
-    "node-sass": "^3.13.1",
+    "node-sass": "^4.14.1",
     "node-sass-utils": "^1.1.2",
     "phantomjs": "^2.1.7",
     "sass-loader": "^6.0.7",
